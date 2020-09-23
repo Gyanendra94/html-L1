@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "Batting statistics of the Indian team for a T20 cricket match."
+	},
+	data: [{        
+		type: "line",
+      	indexLabelFontSize: 16,
+		dataPoints: [
+			
+			{ x:5,y: 40},
+            
+			{ x:10,y: 75},
+          
+			{ x:15,y: 140 ,indexLabel: "\u2191 highest",markerColor: "red", markerType: "triangle" }
+			
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>

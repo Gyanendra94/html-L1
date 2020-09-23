@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<!--
+    <img src="" alt="View Area" width="300px" height="200px"><br>
+    <input type="button" value="Play">
+    <input type="button" value="Pause">
+-->
+    <video id="myVideo" width="300" height="150" src="videos/butterfly.mp4" controls>
+    </video>
+     
+     <br>
+      
+       <button onclick="playVid()" type="button">Play</button>
+       <button onclick="pauseVid()" type="button">Pause</button>
+   
+   <script>
+   
+       var vid = document.getElementById("myVideo"); 
+
+       function playVid() { 
+        vid.play(); 
+        } 
+
+       function pauseVid() { 
+        vid.pause(); 
+       }
+       
+    </script>
+    
+</body>
+
+</html>
